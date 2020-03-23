@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SeekBar
+            android:id="@+id/redSeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:alpha="0.5"
+            android:background="#ff0000"
+            android:max="3"
+            android:progress="0" />
+
+        <SeekBar
+            android:id="@+id/greenSeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:alpha="0.5"
+            android:background="#00FF00"
+            android:max="3"
+            android:progress="0" />
+
+        <SeekBar
+            android:id="@+id/blueSeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:alpha="0.5"
+            android:background="#0000FF"
+            android:max="3"
+            android:progress="0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
